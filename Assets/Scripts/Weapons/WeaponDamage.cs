@@ -12,6 +12,7 @@ public class WeaponDamage : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             enemyLife.TakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 }
