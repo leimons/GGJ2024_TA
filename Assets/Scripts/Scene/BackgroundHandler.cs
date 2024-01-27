@@ -30,7 +30,7 @@ public class BackgroundHandler : MonoBehaviour
             float parallax = playerMovement * parallaxFactors[i];
 
             // Calculate the target position for the layer
-            float targetX = layers[i].position.x + parallax * 10;
+            float targetX = layers[i].position.x + parallax * 2.0f;
             Vector3 targetPosition = new Vector3(targetX, layers[i].position.y, layers[i].position.z);
 
             // Smoothly move the layer towards the target position
