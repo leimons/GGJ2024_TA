@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class WeaponDamage : MonoBehaviour
 {
-    [SerializeField] private int damage;
-    [SerializeField] public EnemyLife enemyLife;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            enemyLife.TakeDamage(damage);
+            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
