@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerLife : MonoBehaviour
-{    
+public class EnemyLife : MonoBehaviour
+{
     [SerializeField] private int health;
 
     public void TakeDamage(int damage)
@@ -15,7 +15,7 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-    private void Die() 
+    private void Die()
     {
         Destroy(gameObject);
     }
