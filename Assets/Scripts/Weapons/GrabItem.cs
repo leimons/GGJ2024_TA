@@ -21,7 +21,7 @@ public class GrabItem : MonoBehaviour
             transform.position = new Vector2(arm.position.x + 1.0f, arm.position.y);
             if (Input.GetKeyDown("e") == true) 
             {
-                body.velocity = new Vector2(throwForce, body.velocity.y);
+                body.velocity = new Vector2(throwForce, body.velocity.x);
                 collisionBool = false;
             }        
         }
