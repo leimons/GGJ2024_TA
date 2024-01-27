@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6315833382510392890, guid: a9c64f8127ea9584ba8dffec8cd0e756, type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7647004454790187457, guid: a9c64f8127ea9584ba8dffec8cd0e756, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.6051226
@@ -266,6 +270,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633650075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6315833382510392890, guid: a9c64f8127ea9584ba8dffec8cd0e756, type: 3}
+  m_PrefabInstance: {fileID: 86236240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777fdca043009db41b1dc545b3f18ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1230481029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,7 +2403,7 @@ PrefabInstance:
     - target: {fileID: 7211498285265869824, guid: 3ffaaccb26361f945916f88c72ed7bd8, type: 3}
       propertyPath: enemyLife
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 633650075}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
