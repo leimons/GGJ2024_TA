@@ -7,7 +7,7 @@ public class ShotScript : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D body;
-    [SerializeField] private float force;
+    [SerializeField] private float force = 20f;
 
     [SerializeField] private PlayerLife playerLife;
     [SerializeField] private int damage = 5;
