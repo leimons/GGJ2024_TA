@@ -15,6 +15,6 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         // sets the x and y camera pos to the focus pos
-        transform.position = new Vector3(Focus.position.x, Focus.position.y + 3.0f, -10.0f);
+        transform.position = new Vector3(Focus.position.x, Focus.position.y, -10.0f);
     }
 }
