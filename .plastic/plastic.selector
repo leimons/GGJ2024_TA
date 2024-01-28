@@ -1,0 +1,4 @@
+repository "GGJ2024_TA@AdoptedTeamGameJam@cloud"
+  path "/"
+    br "/main"
+    co "/main"
