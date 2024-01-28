@@ -22,9 +22,6 @@ public class ShotScript : MonoBehaviour
 
         Vector2 direction = player.transform.position - transform.position;
         body.velocity = new Vector2(direction.x, direction.y).normalized * force;
-
-        float rot = Mathf.Atan2(-direction.x, -direction.y) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
     }
 
     // Update is called once per frame
