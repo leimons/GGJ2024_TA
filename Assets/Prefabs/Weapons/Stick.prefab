@@ -141,8 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfd5af48060d2643a7da71f9671188f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  enemyLife: {fileID: 0}
 --- !u!1 &7135952692737090926
 GameObject:
   m_ObjectHideFlags: 0
