@@ -27,12 +27,12 @@ public class Boss1Movement : MonoBehaviour
         {
             if (body.position.x > playerPos.position.x)
             {
-                body.velocity += Vector2.left * new Vector2(acc * Time.deltaTime, body.velocity.y);
+                body.velocity += Vector2.left * new Vector2(acc * Time.deltaTime, 0f);
             }
 
             if (body.position.x < playerPos.position.x)
             {
-                body.velocity += Vector2.right * new Vector2(acc * Time.deltaTime, body.velocity.y);
+                body.velocity += Vector2.right * new Vector2(acc * Time.deltaTime, 0f);
             }
         }
     }
