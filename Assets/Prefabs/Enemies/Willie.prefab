@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  playerLife: {fileID: 0}
+  playerLife: {fileID: 4470997628186992120, guid: 592ee8f0a07d1834690c49b985d5d0c0, type: 3}
 --- !u!114 &6862401937983368529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,10 +240,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc2f5c6128874d4da26c16cafaf89e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 0}
+  shot: {fileID: 1428793904663987973, guid: d194f8c642016ec40a4e52db69a2f5f2, type: 3}
   shotPos: {fileID: 0}
-  player: {fileID: 0}
-  maxDistance: 0
+  player: {fileID: 1719698935911785321, guid: 592ee8f0a07d1834690c49b985d5d0c0, type: 3}
+  maxDistance: 20
 --- !u!1 &8850114399803256393
 GameObject:
   m_ObjectHideFlags: 0
