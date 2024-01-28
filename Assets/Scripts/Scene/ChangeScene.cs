@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void MoveToScene(int sceneID){
         // Menu BGM Code
-        if (sceneID > 3)
+        if (sceneID > 2)
             UIBGM.instance.GetComponent<AudioSource>().Pause();
 
         // End of Menu BGM Code
