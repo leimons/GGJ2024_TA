@@ -17,6 +17,15 @@ public class PlayerLife : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Die();
+        }
+    }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
