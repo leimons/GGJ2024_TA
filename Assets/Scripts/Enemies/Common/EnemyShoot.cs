@@ -7,7 +7,7 @@ public class EnemyShoot : MonoBehaviour
     [SerializeField] private GameObject shot;
     [SerializeField] private Transform shotPos;
     [SerializeField] private GameObject player;
-    [SerializeField] private float maxDistance;
+    [SerializeField] private float maxDistance = 20f;
 
     private float timer;
     // Start is called before the first frame update
