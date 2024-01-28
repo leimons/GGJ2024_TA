@@ -2373,7 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7fb73a370b54e444b4dfcae59fb557e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Focus: {fileID: 0}
+  Focus: {fileID: 8039977937637551067}
 --- !u!114 &1257766507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3158,6 +3158,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18265a1fe88ff614fbbbcdd20d9c77c6, type: 3}
+--- !u!4 &8039977937637551067 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5090254668721325960, guid: 18265a1fe88ff614fbbbcdd20d9c77c6, type: 3}
+  m_PrefabInstance: {fileID: 8039977937637551066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8538240945740495408
 PrefabInstance:
   m_ObjectHideFlags: 0
