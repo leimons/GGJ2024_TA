@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
 using UnityEngine;
 
 public class GrabItem : MonoBehaviour
@@ -19,12 +18,12 @@ public class GrabItem : MonoBehaviour
     {
         if (collisionBool == true)
         {
-            transform.position = new Vector2(arm.position.x + 1.0f, arm.position.y);
-            if (Input.GetKeyDown("e") == true) 
+            transform.position = new Vector2(arm.position.x + 3.0f, arm.position.y);
+            if (Input.GetKeyDown("e") == true)
             {
                 body.velocity = new Vector2(throwForce, body.velocity.x);
                 collisionBool = false;
-            }        
+            }
         }
     }
 
