@@ -7,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
     // Variable of type Rigidbody2D, allows us to
     // manipulate the velocity of the player
     private Rigidbody2D body;
-
+    private Animator anim;
     private Collider2D coll;
+    private SpriteRenderer sprite;
 
     // variable to store the movement
     // direction of the player
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
         // initalize the body variable
         body = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -47,12 +50,31 @@ public class PlayerMovement : MonoBehaviour
             // makes the players vertical velocity = jumpforce
             body.velocity = new Vector2(body.velocity.x, jumpForce);
         }
+
+        UpdateAnim();
     }
 
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, ground);
     }
+    private void UpdateAnim()
+    {
+        if (dirX > 0)
+        {
+            anim.SetBool("isMoving", true);
+            sprite.flipX = false;
+        }
+        else if (dirX < 0)
+        {
+            anim.SetBool("isMoving", true);
+            sprite.flipX = true;
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
 
+    }
 }
 
