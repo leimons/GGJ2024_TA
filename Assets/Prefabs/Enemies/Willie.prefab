@@ -241,9 +241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 0}
-  shotPos: {fileID: 0}
+  shotPos: {fileID: 4821389489414131071}
   player: {fileID: 0}
-  maxDistance: 0
+  maxDistance: 3000
 --- !u!1 &8850114399803256393
 GameObject:
   m_ObjectHideFlags: 0
